@@ -7,5 +7,8 @@ ping -c3 -w5 $ip_address  # -c - count  -w - wait for 5 sec if the ip is not rea
 
 #task2: connecting our remote machine with ssh using bash script
 
+read -p "enter Username:" username
+read -p "Enter the IP" VMIP
 
+ssh $username@$VMIP
 
